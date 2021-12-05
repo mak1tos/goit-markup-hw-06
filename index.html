@@ -380,6 +380,7 @@
                          <h2 class="subscribe"> подпишись на рассылку </h2>
                          <form action="#" class="online-form">
                              <input type="text"
+                                id="e-mail"
                                 class="online-imput"
                                 name="online-name"
                                 placeholder="E-mail"
@@ -404,11 +405,88 @@
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <form action="#" class="modal-form">
                     <div class="modal-field">
-                        <label class="form-input-text" for="user-name">
+                        <label 
+                            class="form-input-text" 
+                            for="user-name">
                             Имя
                         </label>
-                        <input type="text">
+                        <div class="input-wrap">
+                        <input 
+                            type="text"
+                            id="user-name"  
+                            name="user-name"    
+                            class="modal-form-input"
+                            required
+                            />
+                            <svg class="input-icon" width="12" height="12">
+                                <use href="./images/icons.svg#icon-name"></use>
+                            </svg>
+                        </div>
+                    </div>        
+                    <div class="modal-field">
+                        <label 
+                            class="form-input-text" 
+                            for="user-tel">
+                            Телефон
+                        </label>
+                        <div class="input-wrap">
+                        <input 
+                            type="tel"
+                            id="user-tel" 
+                            name="user-tel"
+                            class="modal-form-input"
+                            required />
+                            <svg class="input-icon" width="13" height="13">
+                                <use href="./images/icons.svg#icon-phone1"></use>
+                            </svg>
+                        </div>    
+                    </div>        
+                    <div class="modal-field">
+                        <label 
+                            class="form-input-text" 
+                            for="user-mail">
+                            Почта
+                        </label>
+                        <div class="input-wrap">
+                        <input 
+                            type="mail"
+                            id="user-mail" 
+                            name="user-mail" 
+                            class="modal-form-input"
+                            required/>
+                            <svg class="input-icon" width="15" height="12">
+                                <use href="./images/icons.svg#icon-mail1"></use>
+                            </svg>
+                        </div>    
+                    </div>     
+                    <div class="modal-field">  
+                        <label 
+                            class="form-input-text" 
+                            for="user-comment">
+                            Комментарий
+                        </label>
+                        <textarea 
+                            name="user-comment" 
+                            id="user-comment" 
+                            class="comment"
+                            placeholder="Введите текст"
+                        ></textarea>
                     </div>
+                    <div class="modal-field">
+                        <input  
+                            type="checkbox"
+                            name="polyci"
+                            id="polyci"
+                            class="modal-check visually-hidden"
+                        />
+                        <label for="polyci" class="check-text">
+                            <span class="check-item">
+                                <svg class="check-icon" width="11" height="8">
+                                    <use href="./images/icons.svg#icon-check"></use>
+                                </svg>
+                            </span> Соглашаюсь с рассылкой и принимаю <a class="contract-text" href="#"> Условия договора</a></label>
+                    <button class="button button-modal" type="submit"> Отправить </button>
+                    </div>                  
                 </form>
             </div>
 
