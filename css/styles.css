@@ -764,7 +764,7 @@ ul {
 .modal{
     padding: 40px 40px 40px 40px;
     position: absolute;
-    width: 528px;
+    min-width: 528px;
     min-height: 581px;
     top: 50%;
     left: 50%;
@@ -815,7 +815,11 @@ ul {
 }
 
 .modal-field{
-    margin-bottom: 20px;    
+    margin-bottom: 10px;    
+}
+
+.field-comment{
+    margin-bottom: 20px;
 }
 
 .modal-field:last-child{
